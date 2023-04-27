@@ -121,9 +121,7 @@ const MainMint = () => {
             >
               NFT TotalSupply:
               {/* TODO: 取得合約目前販售數量 TotalSupply */}
-              {totalSupply > 0
-                ? totalSupply.toString()
-                : '恭喜你得到NO.1的殊榮'}
+              {totalSupply?.toString()}
             </Box>
           </div>
         ) : (
