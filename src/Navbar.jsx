@@ -5,7 +5,7 @@ import Twitter from './assets/social-media-icons/twitter_32x32.png'
 import Email from './assets/social-media-icons/email_32x32.png'
 import {ConnectWallet} from "@thirdweb-dev/react";
 import { Button } from '@chakra-ui/react'
-
+import './Navbar.css'
 
 const Navbar = () => {
 
@@ -54,7 +54,7 @@ const Navbar = () => {
           fontFamily="inherit"
           padding="15px"
         >
-          <ConnectWallet btnTitle='連接錢包'/>
+          <ConnectWallet className='btn_wallet' btnTitle='連接錢包'/>
         </Box>
       </Flex>
 
