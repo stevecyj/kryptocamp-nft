@@ -41,13 +41,13 @@ contract KryptoCampNFT is ERC721, Ownable {
     ) public view override returns (string memory) {
         require(_exists(_tokenId), "Token does not exist!");
         return
-            string(
-                abi.encodePacked(
-                    baseTokenUri,
-                    Strings.toString(_tokenId),
-                    ".json"
-                )
-            );
+        string(
+            abi.encodePacked(
+                baseTokenUri,
+                Strings.toString(_tokenId),
+                ".json"
+            )
+        );
     }
 
     function withdraw() external onlyOwner {
